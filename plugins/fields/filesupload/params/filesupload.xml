@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="fieldparams">
+        <fieldset name="fieldparams" addfieldpath="/plugins/fields/filesupload/fields">
+            <field name="destination"
+                   type="folderlist"
+                   default=""
+                   label="Destination folder"
+                   directory="uploads"
+                   required="true"
+                   filter=""
+                   exclude=""
+                   stripext=""
+            />
+
+            <field name="acceptedformats" type="list" default="jpg" required="true" label="Accepted file formats"
+                   description="" multiple="true">
+                <option value="">Please Select</option>
+                <option value="jpg">jpg</option>
+                <option value="jpeg">jpeg</option>
+                <option value="png">png</option>
+                <option value="gif">gif</option>
+                <option value="pdf">pdf</option>
+                <option value="doc">doc</option>
+                <option value="docx">docx</option>
+                <option value="xls">xls</option>
+                <option value="xlsx">xlsx</option>
+                <option value="rtf">rtf</option>
+                <option value="odt">odt</option>
+                <option value="ods">ods</option>
+            </field>
+
+            <field
+                    name="filesize"
+                    type="number"
+                    default="500"
+                    label="Maximum file size (kb)"
+                    required="true"
+                    description=""
+                    min="0"
+                    max="100000"/>
+
+            <field name="filename_format" type="list" default="0" label="Filename format" required="true"
+                   description="">
+                <option value="0">Filename_timestamp</option>
+                <option value="1">Filename_randomint(6)</option>
+                <option value="2">randomchar(12)</option>
+                <option value="3">Filename (Danger of duplicate)</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>

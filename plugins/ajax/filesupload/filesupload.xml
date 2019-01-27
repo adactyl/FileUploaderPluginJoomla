@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.7.0"
+           type="plugin"
+           group="ajax"
+           method="upgrade">
+	<name>Ajax - Files upload</name>
+	<version>1.0.1</version>
+	<creationDate>January 2019</creationDate>
+	<author>Denis</author>
+	<authorEmail>aaa@aaa.com</authorEmail>
+	<authorUrl>>www.test.com</authorUrl>
+	<license>GNU General Public License version 2 or later</license>
+	<description>Joomla Ajax Files Upload Plugin</description>
+
+	<files>
+		<filename plugin="filesupload">filesupload.php</filename>
+	</files>
+</extension>
