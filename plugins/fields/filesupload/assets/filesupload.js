@@ -1,5 +1,3 @@
-// @author          Denis Vorontsov
-// @license         GNU GPLv3 <http://www.gnu.org/licenses/gpl.html> or later
 
 jQuery("document").ready(function () {
 
@@ -21,9 +19,8 @@ jQuery("document").ready(function () {
                 type: "POST",
                 data: myFormData,
                 cache: false,
-                // dataType: 'json',
-                processData: false, // Не обрабатываем файлы (Don't process the files)
-                contentType: false, // Так jQuery скажет серверу что это строковой запрос
+                processData: false,
+                contentType: false,
                 success: function (data) {
                     var answer = JSON.parse(data);
                     if (answer.error) {
